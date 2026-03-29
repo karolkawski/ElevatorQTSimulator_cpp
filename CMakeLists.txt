@@ -19,6 +19,8 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
 add_executable(ElevatorQTSimulator_cpp
     src/main.cpp
     src/Passenger.cpp
+    src/Floor.cpp
+    src/Building.cpp
 )
 target_include_directories(ElevatorQTSimulator_cpp PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 target_link_libraries(ElevatorQTSimulator_cpp PRIVATE Qt6::Widgets)
