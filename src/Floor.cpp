@@ -28,9 +28,11 @@ Passenger Floor::popWaiting(Direction dir) {
         waitingDown.pop();
         break;
     }
+    //
+    return waitingUp.front();
 }
 
-Passenger Floor::hasWaiting(Direction dir) {
+bool Floor::hasWaiting(Direction dir) {
     switch (dir)
     {
     case Direction::UP:
@@ -40,6 +42,7 @@ Passenger Floor::hasWaiting(Direction dir) {
         !waitingDown.empty();
         break;
     }
+    return false;
 };
 
 int Floor::getNumber() {

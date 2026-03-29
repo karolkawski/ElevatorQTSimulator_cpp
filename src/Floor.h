@@ -8,7 +8,7 @@ class Floor {
 
         void addWaiting(Passenger p, Direction dir);
         Passenger popWaiting(Direction dir);
-        Passenger hasWaiting(Direction dir);
+        bool hasWaiting(Direction dir);
         int getNumber();
 
     private:
