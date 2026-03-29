@@ -8,8 +8,8 @@ class Floor {
 
         void addWaiting(Passenger p, Direction dir);
         Passenger popWaiting(Direction dir);
-        bool hasWaiting(Direction dir);
-        int getNumber();
+        bool hasWaiting(Direction dir) const;
+        int getNumber() const;
 
     private:
         int floorNumber;

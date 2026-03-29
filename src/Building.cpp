@@ -14,10 +14,10 @@ void Building::addFloor(Floor f) {
     floors.push_back(f);
 };
 
-int Building::getTotalFloors() {
+int Building::getTotalFloors() const {
     return floors.size();
 };
 
-int Building::getNumFloors() {
+int Building::getNumFloors() const  {
     return numFloors;
 };

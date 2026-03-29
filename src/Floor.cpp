@@ -19,32 +19,32 @@ void Floor::addWaiting(Passenger p, Direction dir) {
 Passenger Floor::popWaiting(Direction dir) {
     switch (dir)
     {
-    case Direction::UP:
+    case Direction::UP: {
         Passenger p = waitingUp.front();
         waitingUp.pop();
-        break;
-    case Direction::DOWN:
+        return p;
+    }
+    case Direction::DOWN: {
         Passenger p = waitingDown.front();
         waitingDown.pop();
-        break;
+        return p;
+    }
     }
     //
     return waitingUp.front();
 }
 
-bool Floor::hasWaiting(Direction dir) {
+bool Floor::hasWaiting(Direction dir) const {
     switch (dir)
     {
     case Direction::UP:
-        !waitingUp.empty();
-        break;
+        return !waitingUp.empty();
     case Direction::DOWN:
-        !waitingDown.empty();
-        break;
+        return !waitingDown.empty();
     }
     return false;
 };
 
-int Floor::getNumber() {
+int Floor::getNumber() const {
     return floorNumber;
 };

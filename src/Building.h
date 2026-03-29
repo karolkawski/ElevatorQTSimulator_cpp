@@ -6,9 +6,9 @@ class Building {
         Building(int numFloors);
 
         Floor& getFloor(int n);
-        int getNumFloors();
+        int getNumFloors() const;
         void addFloor(Floor f);
-        int getTotalFloors();
+        int getTotalFloors() const;
 
     private:
         std::vector<Floor> floors;
