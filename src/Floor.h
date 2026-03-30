@@ -1,6 +1,7 @@
 #include <queue>
 #include "Passenger.h"
 #include "Direction.h"
+#pragma once
 
 class Floor {
     public:

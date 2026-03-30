@@ -1,3 +1,4 @@
+#pragma once
 class Passenger {
 public:
     Passenger(int id, int destFloor);

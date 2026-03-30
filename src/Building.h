@@ -1,6 +1,6 @@
 #include <vector>
 #include "Floor.h"
-
+#pragma once
 class Building {
     public:
         Building(int numFloors);
